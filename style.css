@@ -1,0 +1,238 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f3;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s;
+}
+
+body.dark-mode {
+    background: #181818;
+    color: #f0f0f3;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: #3498db;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.logo span {
+    color: #ff6b6b;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ff6b6b;
+}
+
+.theme-toggle .btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #ecf0f3;
+    box-shadow: inset 8px 8px 16px #d1d9e6, inset -8px -8px 16px #ffffff;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background: #ff6b6b;
+}
+
+.products {
+    margin: 50px 0;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background: #ecf0f3;
+    box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin: 20px 0 10px;
+}
+
+.product p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.product .btn {
+    padding: 10px 20px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.product .btn:hover {
+    background: #ff6b6b;
+}
+
+.about {
+    text-align: center;
+    padding: 50px 20px;
+    background: #ecf0f3;
+    box-shadow: inset 8px 8px 16px #d1d9e6, inset -8px -8px 16px #ffffff;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+}
+
+.contact {
+    padding: 50px 20px;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ecf0f3;
+    box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Continue style.css */
+.contact .form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.contact label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background: #ecf0f3;
+    box-shadow: inset 8px 8px 16px #d1d9e6, inset -8px -8px 16px #ffffff;
+    border-radius: 20px;
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    box-shadow: inset 8px 8px 16px #d1d9e6, inset -8px -8px 16px #ffffff, 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+.contact textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact .btn {
+    padding: 10px 20px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact .btn:hover {
+    background: #ff6b6b;
+}
